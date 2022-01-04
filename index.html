@@ -8,7 +8,8 @@
             //check login
         let isLogin=JSON.parse(localStorage.getItem('isLogin'))
         if(!isLogin){
-            window.location.href=window.location.pathname.replace('index','login')
+            //window.location.href=window.location.pathname.replace('index','login')
+            window.location.href=window.location.origin+'/login'
         }
     </script>
     <title>The One - abum</title>
@@ -27,21 +28,21 @@
             <div class="container" style="align-items: center;">
                 <div class="row">
                     <div class="col-3 header-logo" style="color: #555;">
-                        <img src="/assets//image/icon.png" width="50px" alt="">
+                        <img src="/assets/image/icon.png" width="50px" alt="">
                         <span class="name">
                             THE ONE
                         </span>
                     </div>
                     <div class="col-6 menu-list">
-                        <li ><a href="/index.html" >Xem abum ảnh</a></li>
-                        <li> <a href="/upload.html">Tải ảnh lên</a> </li>
+                        <li ><a href="/index" >Xem abum ảnh</a></li>
+                        <li> <a href="/upload">Tải ảnh lên</a> </li>
                     </div>
                     <div class="col-3 image-area-avatar">
                         <div class="image-area">
                             <img src="/assets/image/avatar.png" width="100%"  alt="" class="img-avatar">
                         </div>
                         <div class="list-item ds-none-block">
-                            <li><a href="/login.html" id="log-out">Đăng xuất</a></li>
+                            <li><a href="/login" id="log-out">Đăng xuất</a></li>
                         </div>
                     </div>
                 </div>
@@ -49,8 +50,8 @@
         </header>
         <div class="side-bar-menu">
             <div>
-                <li style="font-size: 20px;padding: 5px 10px;margin: 5px;"><a href="/index.html" >Xem abum ảnh</a></li>
-                <li style="font-size: 20px;padding: 5px 10px;margin: 5px;"> <a href="/upload.html">Tải ảnh lên</a> </li>
+                <li style="font-size: 20px;padding: 5px 10px;margin: 5px;"><a href="/index" >Xem abum ảnh</a></li>
+                <li style="font-size: 20px;padding: 5px 10px;margin: 5px;"> <a href="/upload">Tải ảnh lên</a> </li>
             </div>
         </div>
         <!-- content -->
